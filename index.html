@@ -9,15 +9,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script type="text/javascript">
         nav = document.getElementById("nav-toggle");
-        nav.onclick = () => {
-            if (nav.classList.contains("collapse")){
-                nav.classList.remove("collapse");
-                nav.classList.add("expand");
-            } else {
-                nav.classList.remove("expand");
-                nav.classList.add("collapse")
+        nav.addEventListener("click", 
+            () => {
+                if (nav.classList.contains("collapse")){
+                    nav.classList.remove("collapse");
+                    nav.classList.add("expand");
+                } else {
+                    nav.classList.remove("expand");
+                    nav.classList.add("collapse")
+                }
             }
-        }
+        );
     </script>
 </head>
 <body style="margin-left: 10px;">
